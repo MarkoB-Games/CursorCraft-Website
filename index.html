@@ -31,7 +31,7 @@
         frameworkUrl: buildUrl + "/CursorCraft-Website.framework.js",
         codeUrl: buildUrl + "/CursorCraft-Website.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "Marko Borojevic",
         productName: "CursorCraft",
         productVersion: "1.0",
       };
@@ -62,6 +62,7 @@
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
+        window.location.href = "mobile.html";
       }
       loadingCover.style.display = "";
 
